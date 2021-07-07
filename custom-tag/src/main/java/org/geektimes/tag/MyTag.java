@@ -11,9 +11,23 @@ import java.io.IOException;
  */
 public class MyTag extends SimpleTagSupport {
 
+    private String message;
+
+    public void setMessage(String msg) {
+        this.message = msg;
+    }
+
     @Override
     public void doTag() throws JspException, IOException {
-        JspWriter out = getJspContext().getOut();
-        out.println("Hello Custom Tag!");
+        {
+            if (message != null) {
+                /* 从属性中使用消息 */
+                JspWriter out = getJspContext().getOut();
+                out.println(message);
+            } else {
+                JspWriter out = getJspContext().getOut();
+                out.println("Hello World ");
+            }
+        }
     }
 }

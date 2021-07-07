@@ -4,6 +4,6 @@
     <title>A sample custom tag</title>
 </head>
 <body>
-<ex:Hello/>
+<ex:Hello message="Hello Tags"/>
 </body>
 </html>

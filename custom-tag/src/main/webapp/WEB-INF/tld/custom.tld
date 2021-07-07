@@ -5,6 +5,9 @@
     <tag>
         <name>Hello</name>
         <tag-class>org.geektimes.tag.MyTag</tag-class>
-        <body-content>empty</body-content>
+        <body-content>scriptless</body-content>
+        <attribute>
+            <name>message</name>
+        </attribute>
     </tag>
 </taglib>
