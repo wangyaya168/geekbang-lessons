@@ -10,6 +10,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>MicroProfile</artifactId>
+    <properties>
+        <jersey.version>2.34</jersey.version>
+        <revision>v2-SNAPSHOT</revision>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -22,15 +26,34 @@
         </dependency>
 
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!-- Jersey -->
+        <dependency>
+            <groupId>org.glassfish.jersey.core</groupId>
+            <artifactId>jersey-client</artifactId>
+            <version>${jersey.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jersey.ext.microprofile</groupId>
+            <artifactId>jersey-mp-rest-client</artifactId>
+            <version>${jersey.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jersey.core</groupId>
+            <artifactId>jersey-common</artifactId>
+            <version>${jersey.version}</version>
+        </dependency>
+        <!-- MicroProfile Config API -->
+        <dependency>
+            <groupId>org.geekbang.projects</groupId>
+            <artifactId>my-configuration</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
     </dependencies>
 
 </project>
