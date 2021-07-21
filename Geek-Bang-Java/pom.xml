@@ -5,6 +5,7 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>MicroProfile</module>
+		<module>custom-tag</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>

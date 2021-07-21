@@ -1,16 +1,7 @@
-# 
+## Spring Boot 多模块项目
 
-**1**、配置文件application.properties中添加
+Geek-Bang-Java是父模块
 
-**management.endpoint.shutdown.enabled=true** 开启actuator的shutdown的端点
+custom-tag是自定义标签模块（第一周）
 
-**2、**
-
-```java
-org.geektimes.service.ShutdownService定义一个post类型的shutdown方法
-```
-
-```
-org.geektimes.TestShutdownService是测试类。
-```
-
+MicroProfile是MicroProfile 模块（第三周）
